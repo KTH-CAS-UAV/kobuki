@@ -1,4 +1,6 @@
-<package>
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>kobuki_description</name>
   <version>0.7.6</version>
   <description>
@@ -19,11 +21,10 @@
   <url type="repository">https://github.com/yujinrobot/kobuki</url>
   <url type="website">http://ros.org/wiki/kobuki_description</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
 
-  <build_depend>urdf</build_depend>
-  <build_depend>xacro</build_depend>
-
-  <run_depend>urdf</run_depend>
-  <run_depend>xacro</run_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 </package>
